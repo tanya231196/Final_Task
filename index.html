@@ -4,39 +4,68 @@
     <meta charset="UTF-8">
     <title>Обучающий портал компании</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
         .container {
-         width: 1500px;
-         height: 400px;
-         background-image: linear-gradient(to right, #E2BCBB, #E4514A);
-         }
-         .col-1-2 {
-         width: 50%;
-         float:left
-         }
-         .logo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: linear-gradient(to right, #E2BCBB, #E4514A);
+        }
+
+        .logo {
             text-decoration: none;
-            color: #000; /* Цвет ссылки */
+            color: #000;
             font-weight: bold;
-         }
+            font-size: 24px;
+        }
 
         nav ul {
             list-style-type: none;
             padding: 0;
-         }
+            display: flex;
+        }
 
         nav li {
             display: inline;
             margin-right: 20px;
          }
+        nav a {
+            text-decoration: none;
+            color: #333;
+         }
 
         .main {
-            clear: both;
-         }
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .grid-item {
+            text-align: center;
+        }
+
+        .grid-item img {
+            width: 50px;
+            height: 50px;
+        }
     </style>
 </head>
 <body>
   <div class="container">
-    <a href="jpg/logo.jpg" class="logo">Обучающий портал компании</a>
+    <a href="index.html" class="logo">Обучающий портал компании</a>
     <nav>
       <ul>
           <li><a href="index.html">Главная</a></li>
@@ -47,22 +76,22 @@
     </nav>
   </div>
 <div class="main">
-  <div class="container">
-    <div class="grid">
+  <div class="grin">
+    <div class="grid-item">
       <div>
-          <p><a href="index.html"><img src="jpg/logo.jpg" width="50" height="50" border="0"></a></p>
+          <a href="index.html"><img src="jpg/logo.jpg"alt="Главная"></p>
           <p>Главная</p>
       </div>
-      <div>
-        <p><a href="cmd.html"><img src="jpg/git.jpg" width="50" height="50" border="0"></a></p>
+      <div class="grin-item">
+        <a href="cmd.html"><img src="jpg/win.jpg" alt="Командная строка Win"></a>
         <p>Командная строка Win</p>
     </div>
-    <div>
-        <p><a href="macOS.html"><img src="jpg/mac.jpg" width="50" height="50" border="0"></a></p>
+    <div class="grid-item">
+        <a href="macOS.html"><img src="jpg/mac.jpg" alt="Терминал Mac"></a>
         <p>Терминал Mac</p>
     </div>
-    <div>
-        <p><a href="git.html"><img src="jpg/win.jpg" width="50" height="50" border="0"></a></p>
+    <div class="grid-item">
+        <a href="git.html"><img src="jpg/git.jpg" alt="Команды Git"></a>
         <p>Команды Git</p>
     </div>
 </div>

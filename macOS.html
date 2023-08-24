@@ -4,11 +4,41 @@
     <meta charset="UTF-8">
     <title>Терминал MacOS</title>
     <style>
-        strong {
-        font-weight: bold;
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-        a {
-        background-color: transparent
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        ul {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: justify;
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        ul li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: red;
+        }
+        strong {
+            font-weight: bold;
         }
     </style>
 </head>
@@ -24,7 +54,7 @@
         Есть сокращенные варианты: <strong>cd-</strong> для перемещения в предыдущую
         директорию или <strong>cd (без аргументов)</strong> для прыжка в домашнюю папку.
     </li>
-    <li><strong>pwds</strong> — укажет полный путь до директории, в которой вы находитесь. Если вы перепрыгнули на
+    <li><strong>pwd</strong> — укажет полный путь до директории, в которой вы находитесь. Если вы перепрыгнули на
         рабочий стол с помощью <strong>cd (без аргументов)</strong>, то <strong>pwd</strong> покажет что-то в духе <strong>/home/Polzovatel/Desktop</strong>.
     </li>
     <li><strong>file</strong> — расскажет, что перед вами изображение, директория или текстовый документ, а также
